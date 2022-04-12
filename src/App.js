@@ -22,40 +22,45 @@ import './style.css';
  * @param {number} описание параметра
  */
 function TopBlock() {
-  return <></>;
+  return (
+    <>
+      <TopBlockNews />
+      <TopBlockAdv />
+    </>
+  );
 }
 
 /**
  * Компонент 'Новости'
  * @function TopBlockNews
  * @description. Вывод новостей.
- * @param {string} tabs вкладки типов новостей
- * @param {string} icon путь (url) к иконке новости
- * @param {string} text текст новости
- * @param {string} url ссылка (url) на самму новость
+ * @param {string} props.tabs вкладки типов новостей
+ * @param {string} props.icon путь (url) к иконке новости
+ * @param {string} props.text текст новости
+ * @param {string} props.url ссылка (url) на самму новость
+ * @param {string} props.datetime вывод даты/времени
  */
 function TopBlockNews(props) {
-  return <></>;
+  return <>Новости</>;
 }
 
 /**
  * Компонент 'Рекламное объявление'
  * @function TopBlockAdv
  * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} tabs вкладки типов новостей
- * @param {string} icon путь (url) к иконке новости
- * @param {string} text текст новости
- * @param {string} url ссылка (url) на самму новость
+ * @param {string} pic путь (url) к картинке объявления
+ * @param {string} title заголовок объявления
+ * @param {string} text текст объявления
+ * @param {string} url ссылка (url) на объявление
  */
 function TopBlockAdv(props) {
-  return <></>;
+  return <>Реклама</>;
 }
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <TopBlock />
     </div>
   );
 }
