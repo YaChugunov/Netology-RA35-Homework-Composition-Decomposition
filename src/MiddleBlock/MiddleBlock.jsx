@@ -7,11 +7,18 @@ import MiddleBlockBanner from './MiddleBlockBanner';
 /**
  * Компонент вывода верхней части страницы (TopBlock):
  * - блок новостей (TopBlockNews)
- * - блок рекламы (MiddleBlock)
+ * - блок рекламы
  * @function MiddleBlock
  * @description компонент вывода верхней части страницы
- * @param {number} описание параметра
  */
-export default function MiddleBlock() {
-  return <div className="middle-block"></div>;
+export default function MiddleBlock(props) {
+  const tabItems = ['Сейчас в СМИ', 'В России', 'Рекомендуем'];
+
+  return (
+    <div className="middle-block">
+      <MiddleBlockTabs tabs={tabItems} />
+      <MiddleBlockSearch />
+      <MiddleBlockBanner />
+    </div>
+  );
 }

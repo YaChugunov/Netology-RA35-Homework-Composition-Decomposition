@@ -9,7 +9,7 @@ import React from 'react';
 export default function TopBlockCurrencies(props) {
   return (
     <div className="top-block-currencies">
-      <h3>Реклама</h3>
+      <h4>Валюты</h4>
     </div>
   );
 }

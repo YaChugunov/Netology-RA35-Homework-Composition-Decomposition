@@ -2,7 +2,6 @@ import React from 'react';
 
 import TopBlockNews from './TopBlockNews';
 import TopBlockAdv from './TopBlockAdv';
-import TopBlockCurrencies from './TopBlockCurrencies';
 
 /**
  * Компонент вывода верхней части страницы (TopBlock):
@@ -18,7 +17,6 @@ export default function TopBlock(props) {
     <div className="top-block">
       <TopBlockNews tabs={tabItems} />
       <TopBlockAdv />
-      <TopBlockCurrencies />
     </div>
   );
 }

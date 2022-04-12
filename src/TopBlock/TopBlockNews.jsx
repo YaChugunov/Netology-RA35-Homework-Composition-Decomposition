@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NewsItem from './NewsItem';
+import TopBlockCurrencies from './TopBlockCurrencies';
 
 /**
  * Компонент 'Новости'
@@ -26,6 +27,7 @@ export default function TopBlockNews(props) {
       <ul>
         <NewsItem icon={''} text={'Заголовок новости 1'} url={'#'} />
       </ul>
+      <TopBlockCurrencies />
     </div>
   );
 }
