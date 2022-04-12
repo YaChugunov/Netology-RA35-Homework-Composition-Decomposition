@@ -17,10 +17,8 @@ export default function TopBlockNews(props) {
   const tabsLen = tabs.length;
 
   const tabsRow = tabs.map((tab) => {
-    console.log(tab);
     return <span>{tab}</span>;
   });
-  console.log(tabsRow);
 
   return (
     <div className="top-block-news">
