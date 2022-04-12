@@ -12,10 +12,19 @@ import NewsItem from './NewsItem';
  * @param {string} text текст новости
  * @param {string} url ссылка (url) на самму новость
  */
-export default function TopBlockNews() {
+export default function TopBlockNews(props) {
+  const tabs = props.tabs;
+  const tabsLen = tabs.length;
+
+  const tabsRow = tabs.map((tab) => {
+    console.log(tab);
+    return <span>{tab}</span>;
+  });
+  console.log(tabsRow);
+
   return (
     <div className="top-block-news">
-      <h3>Новости</h3>
+      <div className="top-block-news-tabs">{tabsRow}</div>
       <ul>
         <NewsItem icon={''} text={'Заголовок новости 1'} url={'#'} />
       </ul>

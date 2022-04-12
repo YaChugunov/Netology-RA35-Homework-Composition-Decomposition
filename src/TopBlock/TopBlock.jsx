@@ -9,13 +9,15 @@ import TopBlockAdv from './TopBlockAdv';
  * - блок рекламы
  * @function TopBlock
  * @description компонент вывода верхней части страницы
- * @param {number} описание параметра
  */
-export default function TopBlock() {
+export default function TopBlock(props) {
+  const tabItems = ['Сейчас в СМИ', 'В России', 'Рекомендуем'];
+
   return (
     <div className="top-block">
-      <TopBlockNews />
+      <TopBlockNews tabs={tabItems} />
       <TopBlockAdv />
+      <TopBlockCurrencies />
     </div>
   );
 }

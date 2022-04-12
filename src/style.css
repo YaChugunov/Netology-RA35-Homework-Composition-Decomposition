@@ -32,6 +32,11 @@ ul {
 .top-block-news {
   width: 75%;
 }
+.top-block-news-tabs span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .top-block-adv {
   width: 25%;
 }
