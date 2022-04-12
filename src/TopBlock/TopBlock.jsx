@@ -2,6 +2,7 @@ import React from 'react';
 
 import TopBlockNews from './TopBlockNews';
 import TopBlockAdv from './TopBlockAdv';
+import TopBlockCurrencies from './TopBlockCurrencies';
 
 /**
  * Компонент вывода верхней части страницы (TopBlock):
