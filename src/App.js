@@ -13,54 +13,26 @@ import './style.css';
  *
  */
 
+import TopBlock from './TopBlock/TopBlock';
+import MiddleBlock from './MiddleBlock/MiddleBlock';
+
 /**
  * Компонент вывода верхней части страницы (TopBlock):
  * - блок новостей (TopBlockNews)
- * - блок рекламы
- * @function TopBlock
+ * - блок рекламы (MiddleBlock)
+ * @function MiddleBlock
  * @description компонент вывода верхней части страницы
  * @param {number} описание параметра
  */
-function TopBlock() {
-  return (
-    <>
-      <TopBlockNews />
-      <TopBlockAdv />
-    </>
-  );
-}
-
-/**
- * Компонент 'Новости'
- * @function TopBlockNews
- * @description. Вывод новостей.
- * @param {string} props.tabs вкладки типов новостей
- * @param {string} props.icon путь (url) к иконке новости
- * @param {string} props.text текст новости
- * @param {string} props.url ссылка (url) на самму новость
- * @param {string} props.datetime вывод даты/времени
- */
-function TopBlockNews(props) {
-  return <>Новости</>;
-}
-
-/**
- * Компонент 'Рекламное объявление'
- * @function TopBlockAdv
- * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} pic путь (url) к картинке объявления
- * @param {string} title заголовок объявления
- * @param {string} text текст объявления
- * @param {string} url ссылка (url) на объявление
- */
-function TopBlockAdv(props) {
-  return <>Реклама</>;
+function MiddleBlock() {
+  return <div className="middle-block"></div>;
 }
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <TopBlock />
+      <MiddleBlock />
     </div>
   );
 }

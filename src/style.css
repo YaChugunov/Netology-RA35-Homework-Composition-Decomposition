@@ -1,3 +1,37 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.top-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.top-block > div {
+  border: 1px #f1f1f1 solid;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  min-height: 100px;
+}
+.top-block-news {
+  width: 75%;
+}
+.top-block-adv {
+  width: 25%;
 }
