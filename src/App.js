@@ -16,17 +16,6 @@ import './style.css';
 import TopBlock from './TopBlock/TopBlock';
 import MiddleBlock from './MiddleBlock/MiddleBlock';
 
-/**
- * Компонент вывода верхней части страницы (TopBlock):
- * - блок новостей (TopBlockNews)
- * - блок рекламы (MiddleBlock)
- * @function MiddleBlock
- * @description компонент вывода верхней части страницы
- * @param {number} описание параметра
- */
-function MiddleBlock() {
-  return <div className="middle-block"></div>;
-}
 
 export default function App() {
   return (
