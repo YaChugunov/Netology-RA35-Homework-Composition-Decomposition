@@ -26,15 +26,28 @@ function TopBlock() {
 }
 
 /**
- * Вы также можете написать введение прямо здесь
+ * Компонент 'Новости'
  * @function TopBlockNews
- * @description. Если вы продолжите использовать теги для добавления содержимого сюда, оно перезапишет вводное содержимое в первой строке.
+ * @description. Вывод новостей.
  * @param {string} tabs вкладки типов новостей
  * @param {string} icon путь (url) к иконке новости
  * @param {string} text текст новости
  * @param {string} url ссылка (url) на самму новость
  */
 function TopBlockNews(props) {
+  return <></>;
+}
+
+/**
+ * Компонент 'Рекламное объявление'
+ * @function TopBlockAdv
+ * @description. Вывод рекламного объявления справа от новостей.
+ * @param {string} tabs вкладки типов новостей
+ * @param {string} icon путь (url) к иконке новости
+ * @param {string} text текст новости
+ * @param {string} url ссылка (url) на самму новость
+ */
+function TopBlockAdv(props) {
   return <></>;
 }
 
