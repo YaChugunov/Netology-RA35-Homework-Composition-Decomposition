@@ -40,3 +40,15 @@ span {
 .top-block-adv {
   width: 25%;
 }
+
+.middle-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle-block-search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
