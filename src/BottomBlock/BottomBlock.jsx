@@ -1,9 +1,9 @@
 import React from 'react';
 import './bottomblock.css';
 
-import BottomBlockCol1 from './BottomBLock/Columnn1/BottomBlockCol1';
-import BottomBlockCol2 from '../Columnn2/BottomBlockCol2';
-import BottomBlockCol3 from '../Columnn3/BottomBlockCol3';
+import BottomBlockCol1 from './Column1/BottomBlockCol1';
+import BottomBlockCol2 from './Column2/BottomBlockCol2';
+import BottomBlockCol3 from './Column3/BottomBlockCol3';
 
 /**
  * Компонент вывода верхней части страницы (TopBlock):
