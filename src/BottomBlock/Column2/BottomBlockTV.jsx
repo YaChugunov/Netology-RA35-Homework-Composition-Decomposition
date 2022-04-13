@@ -18,8 +18,6 @@ import React from 'react';
   );
 }
 
-
-
 /**
  * Компонент вывода верхней части страницы (BottomBlock):
  * - блок новостей (BottomBlockTV)

@@ -1,8 +1,8 @@
 import React from 'react';
 import './topblock.css';
 
-import TopBlockNews from './TopBlockNews';
-import TopBlockAdv from './TopBlockAdv';
+import TopBlockNews from './components/TopBlockNews';
+import TopBlockAdv from './components/TopBlockAdv';
 
 /**
  * Компонент вывода верхней части страницы (TopBlock):

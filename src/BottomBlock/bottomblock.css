@@ -11,6 +11,20 @@
   margin: 5px 10px;
 }
 
+.bottom-block-weather {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  font-size: 0.9em;
+}
+.bottom-block-weather div {
+  margin-right: 10px;
+}
+.bottom-block-weather .temp {
+  font-size: 20px;
+  font-weight: 700;
+}
 .bottom-block-tv-item {
   display: flex;
   flex-direction: row;
