@@ -15,13 +15,14 @@ import './style.css';
 
 import TopBlock from './TopBlock/TopBlock';
 import MiddleBlock from './MiddleBlock/MiddleBlock';
-
+import BottomBlock from './BottomBlock/BottomBlock';
 
 export default function App() {
   return (
     <div className="container">
       <TopBlock />
       <MiddleBlock />
+      <BottomBlock />
     </div>
   );
 }

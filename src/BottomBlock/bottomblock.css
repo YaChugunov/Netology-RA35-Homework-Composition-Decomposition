@@ -1,0 +1,10 @@
+.bottom-block {
+  display: flex;
+  flex-direction: row;
+}
+.bottom-block-col1,
+.bottom-block-col2,
+.bottom-block-col3 {
+  display: flex;
+  flex-direction: column;
+}
