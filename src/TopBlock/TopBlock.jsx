@@ -21,19 +21,22 @@ export default function TopBlock(props) {
     {
       id: '1',
       icon: 'https://avatars.mds.yandex.net/get-ynews-logo/135513/1002-1544074003449-square/logo-square',
-      title: 'Новость 1 новость 1 новость 1 новость 1 новость 1',
+      title:
+        'Sed et malesuada urna, eget semper nulla. Sed pharetra ipsum a libero sollicitudin, vel vulputate ante lacinia',
       url: '#',
     },
     {
       id: '2',
       icon: 'https://avatars.mds.yandex.net/get-ynews-logo/50744/254114763-1478693759388-square/logo-square',
-      title: 'Новость 2 новость 2 новость 2 новость 2 новость 2',
+      title:
+        'Cras consectetur, sem non imperdiet faucibus, sem erat molestie nisl, non ornare massa dolor eget turpis.',
       url: '#',
     },
     {
       id: '3',
       icon: 'https://avatars.mds.yandex.net/get-ynews-logo/50744/1013-1496416510291-square/logo-square',
-      title: 'Новость 3 новость 3 новость 3 новость 3 новость 3',
+      title:
+        'Praesent eget commodo nunc, porttitor blandit dui. Aenean accumsan consequat blandit',
       url: '#',
     },
   ];
