@@ -1,10 +1,16 @@
 import React from 'react';
 
 /**
- * Компонент 'Вывод курсов валют'
+ * Вложенный компонент вывода курсов валют
  * @function TopBlockCurrencies
- * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} currency заголовок объявления
+ * @description. Вложенный компонент вывода курсов валют.
+ *
+ * @typedef {Object} Props
+ * @property {number} props.id идентификатор валюты
+ * @property {string} props.title название валюты
+ * @property {string} props.url ссылка (url) на страницу курса
+ * @property {string} props.rate текущий курс
+ * @property {string} props.diff изменение курса
  */
 export default function TopBlockCurrencies(props) {
   return (

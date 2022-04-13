@@ -1,24 +1,41 @@
 import React from 'react';
 
+/**
+ * Импортируем компоненты для TopBlockNews
+ */
 import TopBlockTabLinks from './TopBlockTabLinks';
 import TopBlockNewsLinks from './TopBlockNewsLinks';
 import TopBlockCurrencies from './TopBlockCurrencies';
 
 /**
- * Компонент 'Новости'
+ * Главный компонент вывода новостей
  * @function TopBlockNews
- * @description. Вывод новостей.
- * @param {string} props.tabs вкладки типов новостей
- * @param {string} props.datetime вывод даты/времени
- * @param {string} icon путь (url) к иконке новости
- * @param {string} text текст новости
- * @param {string} url ссылка (url) на самму новость
+ * @description. Главный компонент вывода новостей.
+ *
+ * @typedef {Object} Props
+ *
+ * @param {props} props.tabs вкладки разделов новостей
+ * @property {number} id идентификатор вкладки
+ * @property {string} title название вкладки
+ * @property {string} url ссылка (url) на страницу вкладки
+ *
+ * @param {props} props.news набор текущих новостей
+ * @property {number} id идентификатор новости
+ * @property {string} icon путь (url) к иконке новости
+ * @property {string} title название новости
+ * @property {string} url ссылка (url) на самму новость
+ *
+ * @param {props} currencies набор валют
+ * @property {number} id идентификатор валюты
+ * @property {string} title название валюты
+ * @property {string} url ссылка (url) на страницу курса
+ * @property {string} rate текущий курс
+ * @property {string} diff изменение курса
  */
 export default function TopBlockNews(props) {
   const tabs = props.tabs;
   const news = props.news;
   const currencies = props.currencies;
-
   const tabLinks = tabs.map((link) => {
     return <TopBlockTabLinks title={link.title} url={link.url} />;
   });

@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * Импортируем данные для компонента MiddleBlockSearch из json-файла и передаем в компонент
+ */
+ import tvData from './data/tvshows.json';
 
 /**
  * Компонент вывода верхней части страницы (BottomBlock):
@@ -26,11 +30,6 @@ import React from 'react';
  * @description компонент вывода верхней части страницы
  */
 export default function BottomBlockTV() {
-  const tvData = [
-    {time: '02:00', show: 'ТНТ. Best', channel: 'ТНТ International'},
-    {time: '02:15', show: 'Джинглики', channel: 'Карусель INT'},
-    {time: '02:25', show: 'Наедине со всеми', channel: 'Первый'},
-  ]
   const tvItems = tvData.map((item) => {
     return <BottomBlockTVItem time={item.time} show={item.show} channel={item.channel} />;
   });

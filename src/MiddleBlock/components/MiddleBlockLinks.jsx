@@ -1,13 +1,14 @@
 import React from 'react';
 
 /**
- * Компонент 'Рекламное объявление'
+ * Вложенный компонент вывода одиночной ссылки над строкой поиской
  * @function MiddleBlockLinks
- * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} pic путь (url) к картинке объявления
- * @param {string} title заголовок объявления
- * @param {string} text текст объявления
- * @param {string} url ссылка (url) на объявление
+ * @description. Вложенный компонент вывода одиночной ссылки над строкой поиской.
+ * 
+ * @typedef {Object} Props объект ссылок
+
+ * @param {string} props.url ссылка (url)
+ * @param {string} props.title название ссылки
  */
 export default function MiddleBlockLinks(props) {
   return (

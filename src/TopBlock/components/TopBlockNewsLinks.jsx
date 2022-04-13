@@ -1,12 +1,16 @@
 import React from 'react';
 
 /**
- * Компонент 'Новость'
+ * Вложенный компонент вывода одиночной новости
  * @function TopBlockNewsLinks
- * @description. Вывод новостей.
- * @param {string} props.icon путь (url) к иконке новости
- * @param {string} props.text текст новости
- * @param {string} props.url ссылка (url) на самму новость
+ * @description. Вложенный компонент вывода разделов новостей.
+ *
+ * @typedef {Object} Props
+ * @param {props} props набор текущих новостей
+ * @property {number} props.id идентификатор новости
+ * @property {string} props.icon путь (url) к иконке новости
+ * @property {string} props.title название новости
+ * @property {string} props.url ссылка (url) на самму новость
  */
 export default function TopBlockNewsLinks(props) {
   return (

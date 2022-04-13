@@ -1,13 +1,9 @@
 import React from 'react';
 
 /**
- * Компонент 'Рекламное объявление'
+ * Вложенный компонент логотипа Яндекса
  * @function MiddleBlockLogo
- * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} pic путь (url) к картинке объявления
- * @param {string} title заголовок объявления
- * @param {string} text текст объявления
- * @param {string} url ссылка (url) на объявление
+ * @description. Вложенный компонент логотипа Яндекса.
  */
 export default function MiddleBlockLogo(props) {
   return (

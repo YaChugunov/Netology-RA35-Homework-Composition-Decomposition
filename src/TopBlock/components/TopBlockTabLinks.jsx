@@ -1,12 +1,15 @@
 import React from 'react';
 
 /**
- * Компонент 'Новость'
+ * Вложенный компонент вывода разделов новостей
  * @function TopBlockTabLinks
- * @description. Вывод новостей.
- * @param {string} props.icon путь (url) к иконке новости
- * @param {string} props.text текст новости
- * @param {string} props.url ссылка (url) на самму новость
+ * @description. Вложенный компонент вывода разделов новостей.
+ *
+ * @typedef {Object} Props
+ * @param {props} props вкладки разделов новостей
+ * @property {number} props.id идентификатор вкладки
+ * @property {string} props.title название вкладки
+ * @property {string} props.url ссылка (url) на страницу вкладки
  */
 export default function TopBlockTabLinks(props) {
   return (

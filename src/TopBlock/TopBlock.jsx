@@ -7,9 +7,9 @@ import TopBlockAdv from './components/TopBlockAdv';
 /**
  * Компонент вывода верхней части страницы (TopBlock):
  * - блок новостей (TopBlockNews)
- * - блок рекламы
+ * - блок рекламы (TopBlockAdv)
  * @function TopBlock
- * @description компонент вывода верхней части страницы
+ * @description Компонент вывода верхней части страницы.
  */
 
 /**
@@ -19,7 +19,7 @@ import news from './data/news.json';
 import tabs from './data/tabs.json';
 import currencies from './data/currencies.json';
 
-export default function TopBlock(props) {
+export default function TopBlock() {
   return (
     <div className="top-block">
       <TopBlockNews tabs={tabs} news={news} currencies={currencies} />

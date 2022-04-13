@@ -1,0 +1,10 @@
+[
+  { "title": "Видео", "url": "#link1" },
+  { "title": "Картинки", "url": "#link2" },
+  { "title": "Новости", "url": "#link3" },
+  { "title": "Карты", "url": "#link4" },
+  { "title": "Маркет", "url": "#link5" },
+  { "title": "Переводчик", "url": "#link6" },
+  { "title": "Эфир", "url": "#link7" },
+  { "title": "Еще", "url": "#link8" }
+]

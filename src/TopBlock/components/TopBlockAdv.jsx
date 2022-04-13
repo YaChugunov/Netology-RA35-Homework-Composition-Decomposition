@@ -1,13 +1,9 @@
 import React from 'react';
 
 /**
- * Компонент 'Рекламное объявление'
+ * Компонент вывода рекламного объявления справа от новостей
  * @function TopBlockAdv
- * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} pic путь (url) к картинке объявления
- * @param {string} title заголовок объявления
- * @param {string} text текст объявления
- * @param {string} url ссылка (url) на объявление
+ * @description. Компонент вывода рекламного объявления справа от новостей.
  */
 export default function TopBlockAdv(props) {
   return (

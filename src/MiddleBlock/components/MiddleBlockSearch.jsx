@@ -1,19 +1,22 @@
 import React from 'react';
 
 import MiddleBlockLogo from './MiddleBlockLogo';
-import MiddleBlockLinks from '../MiddleBlock/MiddleBlockLinks';
+import MiddleBlockLinks from './MiddleBlockLinks';
 
 /**
- * Компонент 'Рекламное объявление'
+ * Главный компонент блока поиска
  * @function MiddleBlockSearch
- * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} pic путь (url) к картинке объявления
- * @param {string} title заголовок объявления
- * @param {string} text текст объявления
- * @param {string} url ссылка (url) на объявление
+ * @description. Главный компонент блока поиска.
+ *
+ * @typedef {Object} props
+ *
+ * @param {props} props.links ссылки над строкой поиска
+ * @property {string} title название ссылки
+ * @property {string} url ссылка (url)
+ * @param {Object} Links объект с ссылками над строкой поиска
  */
 export default function MiddleBlockSearch(props) {
-  const mappedlinks = props.links.map((link) => {
+  const Links = props.links.map((link) => {
     return <MiddleBlockLinks url={link.url} title={link.title} />;
   });
   return (
@@ -21,7 +24,7 @@ export default function MiddleBlockSearch(props) {
       <div className="middle-block-search">
         <MiddleBlockLogo />
         <div className="middle-block-search-main">
-          <div className="middle-block-search-main-links">{mappedlinks}</div>
+          <div className="middle-block-search-main-links">{Links}</div>
           <div className="middle-block-search-main-input">
             <input type="text" />
             <button>Искать</button>

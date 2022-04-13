@@ -5,23 +5,19 @@ import MiddleBlockSearch from './components/MiddleBlockSearch';
 import MiddleBlockBanner from './components/MiddleBlockBanner';
 
 /**
- * Компонент вывода верхней части страницы (TopBlock):
- * - блок новостей (TopBlockNews)
- * - блок рекламы
+ * Компонент вывода средней части страницы (MiddleBlock):
+ * - блок поиска (MiddleBlockSearch)
+ * - рекламный баннер (MiddleBlockBanner)
  * @function MiddleBlock
- * @description компонент вывода верхней части страницы
+ * @description Компонент вывода средней части страницы.
  */
+
+/**
+ * Импортируем данные для компонента MiddleBlockSearch из json-файла и передаем в компонент
+ */
+import linksData from './data/links.json';
+
 export default function MiddleBlock(props) {
-  const linksData = [
-    { title: 'Видео', url: '#link1' },
-    { title: 'Картинки', url: '#link2' },
-    { title: 'Новости', url: '#link3' },
-    { title: 'Карты', url: '#link4' },
-    { title: 'Маркет', url: '#link5' },
-    { title: 'Переводчик', url: '#link6' },
-    { title: 'Эфир', url: '#link7' },
-    { title: 'Еще', url: '#link8' },
-  ];
   return (
     <div className="middle-block">
       <MiddleBlockSearch links={linksData} />

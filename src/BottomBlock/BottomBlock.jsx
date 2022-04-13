@@ -1,16 +1,19 @@
 import React from 'react';
-import './bottomblock.css';
+import './assets/css/bottomblock.css';
 
-import BottomBlockCol1 from './Column1/BottomBlockCol1';
-import BottomBlockCol2 from './Column2/BottomBlockCol2';
-import BottomBlockCol3 from './Column3/BottomBlockCol3';
+import BottomBlockCol1 from './components/BottomBlockCol1';
+import BottomBlockCol2 from './components/BottomBlockCol2';
+import BottomBlockCol3 from './components/BottomBlockCol3';
 
 /**
- * Компонент вывода верхней части страницы (TopBlock):
- * - блок новостей (TopBlockNews)
- * - блок рекламы
- * @function TopBlock
- * @description компонент вывода верхней части страницы
+ * Компонент вывода нижней части страницы (BottomBlock)
+ *
+ * Вся композиция разделена на три вертикальных блока, в каждом из которых расположены виджеты:
+ * - BottomBlockCol1 - Блок 1: Виджеты - Погода, Посещаемое
+ * - BottomBlockCol2 - Блок 2: Виджеты - Карта России, Телепрограмма
+ * - BottomBlockCol3 - Блок 3: Виджеты - Эфир
+ * @function BottomBlock
+ * @description Компонент нижней верхней части страницы.
  */
 export default function BottomBlock(props) {
   return (

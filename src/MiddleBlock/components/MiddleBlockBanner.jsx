@@ -1,15 +1,11 @@
 import React from 'react';
 
 /**
- * Компонент 'Рекламное объявление'
+ * Компонент вывода большого рекламного баннера
  * @function MiddleBlockBanner
- * @description. Вывод рекламного объявления справа от новостей.
- * @param {string} pic путь (url) к картинке объявления
- * @param {string} title заголовок объявления
- * @param {string} text текст объявления
- * @param {string} url ссылка (url) на объявление
+ * @description. Компонент вывода большого рекламного баннера.
  */
-export default function MiddleBlockBanner(props) {
+export default function MiddleBlockBanner() {
   return (
     <div className="middle-block-banner">
       <h4>Баннер</h4>
