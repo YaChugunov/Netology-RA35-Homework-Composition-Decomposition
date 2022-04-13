@@ -1,13 +1,11 @@
 import React from 'react';
 
 /**
- * Компонент вывода верхней части страницы (TopBlock):
- * - блок новостей (BottomBlockLinks)
- * - блок рекламы
+ * Компонент вывода ссылок (BottomBlockLinks):
  * @function BottomBlockLinks
- * @description компонент вывода верхней части страницы
+ * @description Компонент вывода ссылок
  */
-export default function BottomBlockLinks(props) {
+export default function BottomBlockLinks() {
   return (
     <div className="bottom-block-links">
       <h4>Посещаемое</h4>

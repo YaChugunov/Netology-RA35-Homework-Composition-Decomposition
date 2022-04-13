@@ -1,13 +1,11 @@
 import React from 'react';
 
 /**
- * Компонент вывода верхней части страницы (TopBlock):
- * - блок новостей (BottomBlockWeather)
- * - блок рекламы
+ * Компонент вывода текущей погоды (BottomBlockWeather):
  * @function BottomBlockWeather
- * @description компонент вывода верхней части страницы
+ * @description Компонент вывода текущей погоды
  */
-export default function BottomBlockWeather(props) {
+export default function BottomBlockWeather() {
   return (
     <>
       <h4>Погода</h4>

@@ -1,11 +1,9 @@
 import React from 'react';
 
 /**
- * Компонент вывода верхней части страницы (BottomBlock):
- * - блок новостей (BottomBlockSchedule)
- * - блок рекламы
+ * Компонент вывода расписаний (BottomBlockSchedule):
  * @function BottomBlockSchedule
- * @description компонент вывода верхней части страницы
+ * @description Компонент вывода расписаний
  */
 export default function BottomBlockSchedule(props) {
   return (
