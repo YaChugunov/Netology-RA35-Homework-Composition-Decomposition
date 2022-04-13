@@ -1,0 +1,34 @@
+.top-block span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.top-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.top-block > div {
+  border: 1px #f1f1f1 solid;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  min-height: 100px;
+}
+.top-block-news {
+  width: 75%;
+}
+.top-block-news-links li {
+  margin: 5px 0;
+}
+.top-block-news-links li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top-block-news-links img {
+  width: 20px;
+  height: 20px;
+}
+.top-block-adv {
+  width: 25%;
+}

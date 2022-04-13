@@ -1,6 +1,6 @@
 import React from 'react';
+import './middleblock.css';
 
-import MiddleBlockTabs from './MiddleBlockTabs';
 import MiddleBlockSearch from './MiddleBlockSearch';
 import MiddleBlockBanner from './MiddleBlockBanner';
 
@@ -12,12 +12,19 @@ import MiddleBlockBanner from './MiddleBlockBanner';
  * @description компонент вывода верхней части страницы
  */
 export default function MiddleBlock(props) {
-  const tabItems = ['Сейчас в СМИ', 'В России', 'Рекомендуем'];
-
+  const links = [
+    'Видео',
+    'Картинки',
+    'Новости',
+    'Карты',
+    'Маркет',
+    'Переводчик',
+    'Эфир',
+    'Еще',
+  ];
   return (
     <div className="middle-block">
-      <MiddleBlockTabs tabs={tabItems} />
-      <MiddleBlockSearch />
+      <MiddleBlockSearch links={links} />
       <MiddleBlockBanner />
     </div>
   );

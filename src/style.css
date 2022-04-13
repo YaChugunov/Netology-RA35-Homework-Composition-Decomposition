@@ -1,6 +1,6 @@
-h1,
-p {
-  font-family: Lato;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 ul {
@@ -15,40 +15,4 @@ ul {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.top-block {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.top-block > div {
-  border: 1px #f1f1f1 solid;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 10px;
-  min-height: 100px;
-}
-.top-block-news {
-  width: 75%;
-}
-span {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.top-block-adv {
-  width: 25%;
-}
-
-.middle-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.middle-block-search {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }

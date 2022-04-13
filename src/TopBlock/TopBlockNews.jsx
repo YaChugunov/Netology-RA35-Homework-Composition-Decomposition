@@ -1,6 +1,7 @@
 import React from 'react';
 
-import NewsItem from './NewsItem';
+import TopBlockTabLinks from './TopBlockTabLinks';
+import TopBlockNewsLinks from './TopBlockNewsLinks';
 import TopBlockCurrencies from './TopBlockCurrencies';
 
 /**
@@ -15,18 +16,26 @@ import TopBlockCurrencies from './TopBlockCurrencies';
  */
 export default function TopBlockNews(props) {
   const tabs = props.tabs;
-  const tabsLen = tabs.length;
+  const news = props.news;
 
-  const tabsRow = tabs.map((tab) => {
-    return <span>{tab}</span>;
+  const tabLinks = tabs.map((link) => {
+    return <TopBlockTabLinks title={link.title} url={link.url} />;
+  });
+  const newsLinks = news.map((link) => {
+    return (
+      <TopBlockNewsLinks
+        id={link.id}
+        icon={link.icon}
+        title={link.title}
+        url={link.url}
+      />
+    );
   });
 
   return (
     <div className="top-block-news">
-      <div className="top-block-news-tabs">{tabsRow}</div>
-      <ul>
-        <NewsItem icon={''} text={'Заголовок новости 1'} url={'#'} />
-      </ul>
+      <div className="top-block-news-tabs">{tabLinks}</div>
+      <ul className="top-block-news-links">{newsLinks}</ul>
       <TopBlockCurrencies />
     </div>
   );
