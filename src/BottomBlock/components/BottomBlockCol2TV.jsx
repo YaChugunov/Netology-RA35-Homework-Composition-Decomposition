@@ -1,11 +1,6 @@
 import React from 'react';
 
 /**
- * Импортируем данные для компонента MiddleBlockSearch из json-файла и передаем в компонент
- */
- import tvData from './data/tvshows.json';
-
-/**
  * Компонент вывода верхней части страницы (BottomBlock):
  * - блок новостей (BottomBlockTVItems)
  * - блок рекламы
@@ -21,6 +16,11 @@ import React from 'react';
     </div>
   );
 }
+
+/**
+ * Импортируем данные для компонента MiddleBlockSearch из json-файла и передаем в компонент
+ */
+ import tvData from './data/tvshows.json';
 
 /**
  * Компонент вывода верхней части страницы (BottomBlock):
