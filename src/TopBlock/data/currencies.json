@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "USD MOEX",
+    "url": "#url1",
+    "rate": "63.52",
+    "diff": "+0.09"
+  },
+  {
+    "id": 2,
+    "title": "EUR MOEX",
+    "url": "#url2",
+    "rate": "85.12",
+    "diff": "+0.14"
+  },
+  {
+    "id": 3,
+    "title": "Нефть",
+    "url": "#url3",
+    "rate": "64.90",
+    "diff": "+1.63"
+  }
+]

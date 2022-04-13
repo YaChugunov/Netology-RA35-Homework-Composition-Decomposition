@@ -1,8 +1,8 @@
 import React from 'react';
-import './middleblock.css';
+import './assets/css/middleblock.css';
 
-import MiddleBlockSearch from './MiddleBlockSearch';
-import MiddleBlockBanner from './MiddleBlockBanner';
+import MiddleBlockSearch from './components/MiddleBlockSearch';
+import MiddleBlockBanner from './components/MiddleBlockBanner';
 
 /**
  * Компонент вывода верхней части страницы (TopBlock):
