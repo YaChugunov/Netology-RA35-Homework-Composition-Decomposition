@@ -15,7 +15,7 @@
   width: 75%;
 }
 .top-block-news-links li {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .top-block-news-links li a {
   display: flex;
@@ -37,4 +37,11 @@
 
 .top-block-adv {
   width: 25%;
+  text-align: center;
+}
+.top-block-adv p {
+  font-size: 0.9em;
+}
+.top-block-adv img {
+  width: 100px;
 }

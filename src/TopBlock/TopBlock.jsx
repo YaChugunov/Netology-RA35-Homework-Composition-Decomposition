@@ -22,7 +22,7 @@ export default function TopBlock(props) {
       id: '1',
       icon: 'https://avatars.mds.yandex.net/get-ynews-logo/135513/1002-1544074003449-square/logo-square',
       title:
-        'Sed et malesuada urna, eget semper nulla. Sed pharetra ipsum a libero sollicitudin, vel vulputate ante lacinia',
+        'Sed et malesuada urna, eget semper nulla. Sed pharetra ipsum a libero sollicitudin, vel vulputate ante lacinia.',
       url: '#',
     },
     {
@@ -36,7 +36,21 @@ export default function TopBlock(props) {
       id: '3',
       icon: 'https://avatars.mds.yandex.net/get-ynews-logo/50744/1013-1496416510291-square/logo-square',
       title:
-        'Praesent eget commodo nunc, porttitor blandit dui. Aenean accumsan consequat blandit',
+        'Praesent eget commodo nunc, porttitor blandit dui. Aenean accumsan consequat blandit.',
+      url: '#',
+    },
+    {
+      id: '4',
+      icon: 'https://avatars.mds.yandex.net/get-ynews-logo/28627/254083361-1516267195536-square/logo-square',
+      title:
+        'Duis euismod sapien ut diam maximus, sed eleifend tortor ullamcorper.',
+      url: '#',
+    },
+    {
+      id: '5',
+      icon: 'https://avatars.mds.yandex.net/get-ynews-logo/50744/1013-1496416510291-square/logo-square',
+      title:
+        'Cras consectetur, sem non imperdiet faucibus, sem erat molestie nisl, non ornare massa dolor eget turpis.',
       url: '#',
     },
   ];
