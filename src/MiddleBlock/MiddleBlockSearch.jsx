@@ -14,7 +14,7 @@ import MiddleBlockLinks from '../MiddleBlock/MiddleBlockLinks';
  */
 export default function MiddleBlockSearch(props) {
   const mappedlinks = props.links.map((link) => {
-    return <MiddleBlockLinks link={link.url} title={link.title} />;
+    return <MiddleBlockLinks url={link.url} title={link.title} />;
   });
   return (
     <>

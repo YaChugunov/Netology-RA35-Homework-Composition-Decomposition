@@ -17,6 +17,7 @@ import TopBlockCurrencies from './TopBlockCurrencies';
 export default function TopBlockNews(props) {
   const tabs = props.tabs;
   const news = props.news;
+  const currencies = props.currencies;
 
   const tabLinks = tabs.map((link) => {
     return <TopBlockTabLinks title={link.title} url={link.url} />;
@@ -31,12 +32,22 @@ export default function TopBlockNews(props) {
       />
     );
   });
+  const currs = currencies.map((item) => {
+    return (
+      <TopBlockCurrencies
+        title={item.title}
+        url={item.title}
+        rate={item.rate}
+        diff={item.diff}
+      />
+    );
+  });
 
   return (
     <div className="top-block-news">
       <div className="top-block-news-tabs">{tabLinks}</div>
       <ul className="top-block-news-links">{newsLinks}</ul>
-      <TopBlockCurrencies />
+      <div className="top-block-news-currencies">{currs}</div>
     </div>
   );
 }

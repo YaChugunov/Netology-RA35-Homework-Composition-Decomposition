@@ -10,10 +10,9 @@ import React from 'react';
  * @param {string} url ссылка (url) на объявление
  */
 export default function MiddleBlockLinks(props) {
-  const link = props.link;
   return (
     <span>
-      <a href={link.link}>{link.title}</a>
+      <a href={props.url}>{props.title}</a>
     </span>
   );
 }

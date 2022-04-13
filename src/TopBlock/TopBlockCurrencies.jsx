@@ -8,8 +8,10 @@ import React from 'react';
  */
 export default function TopBlockCurrencies(props) {
   return (
-    <div className="top-block-currencies">
-      <h4>Валюты</h4>
-    </div>
+    <span>
+      <a href={props.url}>
+        <b>{props.title}</b> {props.rate} {props.diff}
+      </a>
+    </span>
   );
 }
